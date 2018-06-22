@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/draw"
+        android:icon="@drawable/icon_draw"
+        android:title="Draw" />
+    <item
+        android:id="@+id/record"
+        android:icon="@drawable/icon_record"
+        android:title="Record" />
+    <item
+        android:id="@+id/camera"
+        android:icon="@drawable/icon_camera"
+        android:title="Camera" />
+</menu>

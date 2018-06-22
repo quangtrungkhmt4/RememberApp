@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/fOne"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:id="@+id/tvStroke"
+            android:text="Stroke Width"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/frameLayoutStroke"
+        android:layout_below="@id/fOne"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SeekBar
+            android:padding="15dp"
+            android:max="100"
+            android:layout_marginRight="50dp"
+            android:id="@+id/seekBarStroke"
+            style="@style/AppThemeTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvDisplayStroke"
+            android:textColor="@color/colorPrimaryDark"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_below="@id/frameLayoutStroke"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvOkStroke"
+            android:padding="10dp"
+            android:layout_toLeftOf="@id/tvCancelStroke"
+            android:layout_marginRight="20dp"
+            style="?android:attr/textAppearanceMedium"
+            android:text="Ok"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvCancelStroke"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            style="?android:attr/textAppearanceMedium"
+            android:text="Cancel"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
